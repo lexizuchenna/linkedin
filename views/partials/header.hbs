@@ -1,0 +1,81 @@
+<nav class="navbar">
+  <div class="navbar-left">
+    <a href="/" class="logo">
+      <img src="/images/logo.png" alt="linkedin" />
+    </a>
+    <div class="search-box">
+      <form action="">
+        <button type="submit">
+          <img src="/images/search.png" alt="search" />
+        </button>
+        <input type="text" name="" id="" placeholder="Search" />
+      </form>
+    </div>
+  </div>
+  <div class="navbar-center">
+    <ul>
+        <li><a href="#" class="active"><img src="/images/home.png" alt="home-button"><span>Home</span></a></li>
+        <li><a href="#"><img src="/images/network.png" alt="home-button"><span>My Network</span></a></li>
+        <li><a href="#"><img src="/images/jobs.png" alt="home-button"><span>Jobs</span></a></li>
+        <li><a href="#"><img src="/images/message.png" alt="home-button"><span>Messaging</span></a></li>
+        <li><a href="#"><img src="/images/notification.png" alt="home-button"><span>Notifications</span></a></li>
+    </ul>
+  </div>
+  <div class="navbar-right">
+    <div class="online">
+      <img
+        src="/images/user-1.png"
+        class="nav-profile-img"
+        alt="user-profile"
+      />
+    </div>
+  </div>
+  <!-- Profile -->
+    <div class="profile-menu-wrap" id="profile-menu">
+        <div class="profile-menu">
+            <div class="user-info">
+                <img src="/images/user-1.png" alt="user">
+                <div>
+                    <h3>Alexander Ukwueze</h3>
+                    <a href="/profile">View your profile</a>
+                </div>
+            </div>
+        <hr>
+        <a href="" class="profile-menu-link">
+            <img src="/images/feedback.png" alt="">
+            <p>Give Feedback</p>
+            <span>></span>
+        </a>
+        <a href="" class="profile-menu-link">
+            <img src="/images/setting.png" alt="">
+            <p>Setting and Privacy</p>
+            <span>></span>
+        </a>
+        <a href="" class="profile-menu-link">
+            <img src="/images/help.png" alt="">
+            <p>Help and Support</p>
+            <span>></span>
+        </a>
+        <a href="" class="profile-menu-link">
+            <img src="/images/display.png" alt="">
+            <p>Display and Accessibility</p>
+            <span>></span>
+        </a>
+        <a href="" class="profile-menu-link">
+            <img src="/images/logout.png" alt="">
+            <p>Logout</p>
+            <span>></span>
+        </a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    let profileMenu = document.getElementById("profile-menu")
+
+    const toogleMenu = () => {
+        profileMenu.classList.toggle("open-menu")
+    }
+
+    document.querySelector(".nav-profile-img").addEventListener("click", () => toogleMenu())
+</script>
